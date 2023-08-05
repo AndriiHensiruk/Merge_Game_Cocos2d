@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\olesya\Desktop\Cocos2d\Merge_Game\proj.win32\CMakeFiles\8ef18d7a48926e736608f85c7f636f6c\SYNC_RESOURCE-Merge_Game.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\olesya\Desktop\Cocos2d\Merge_Game\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\olesya\Desktop\Cocos2d\Merge_Game\proj.win32\CMakeFiles\SYNC_RESOURCE-Merge_Game" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{14DFB4AA-EEFF-3383-9FFF-7CFC7F9B6C1B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

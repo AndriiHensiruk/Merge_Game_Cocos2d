@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<dict>
+<key>title</key>
+<string>二〇四八</string>
+<key>score</key>
+<string>当前分:</string>
+<key>best_score</key>
+<string>最高分:</string>
+<key>suspend</key>
+<string>暂停</string>
+<key>scoreMenu</key>
+<string>得分纪录</string>
+<key>back_game</key>
+<string>回到游戏</string>
+<key>back_menu</key>
+<string>回到主页</string>
+</dict>

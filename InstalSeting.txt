@@ -1,0 +1,4 @@
+
+cocos new -p org.testCompany.Merge_Game_Cocos2d -d C:\Users\olesya\Desktop\Cocos2d -l cpp --portrait Merge_Game_Cocos2d
+
+cmake .. -G "Visual Studio 16 2019" -AWin32

@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CA08BF77-3AB6-32B9-BB2F-1915CFFFC288}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/olesya/Desktop/Cocos2d/Merge_Game/cocos2d/cocos/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/olesya/Desktop/Cocos2d/Merge_Game -BC:/Users/olesya/Desktop/Cocos2d/Merge_Game/proj.win32 --check-stamp-file C:/Users/olesya/Desktop/Cocos2d/Merge_Game/proj.win32/engine/cocos/core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\2d\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\3d\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\audio\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\base\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\editor-support\cocostudio\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\math\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\navmesh\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\network\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\physics\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\physics3d\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\platform\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\renderer\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\ui\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\extensions\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\olesya\Desktop\Cocos2d\Merge_Game\proj.win32\engine\cocos\core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/olesya/Desktop/Cocos2d/Merge_Game/cocos2d/cocos/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/olesya/Desktop/Cocos2d/Merge_Game -BC:/Users/olesya/Desktop/Cocos2d/Merge_Game/proj.win32 --check-stamp-file C:/Users/olesya/Desktop/Cocos2d/Merge_Game/proj.win32/engine/cocos/core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\2d\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\3d\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\audio\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\base\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\editor-support\cocostudio\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\math\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\navmesh\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\network\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\physics\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\physics3d\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\platform\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\renderer\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\ui\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\extensions\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\olesya\Desktop\Cocos2d\Merge_Game\proj.win32\engine\cocos\core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/olesya/Desktop/Cocos2d/Merge_Game/cocos2d/cocos/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/olesya/Desktop/Cocos2d/Merge_Game -BC:/Users/olesya/Desktop/Cocos2d/Merge_Game/proj.win32 --check-stamp-file C:/Users/olesya/Desktop/Cocos2d/Merge_Game/proj.win32/engine/cocos/core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\2d\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\3d\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\audio\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\base\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\editor-support\cocostudio\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\math\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\navmesh\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\network\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\physics\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\physics3d\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\platform\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\renderer\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\ui\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\extensions\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\olesya\Desktop\Cocos2d\Merge_Game\proj.win32\engine\cocos\core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/olesya/Desktop/Cocos2d/Merge_Game/cocos2d/cocos/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/olesya/Desktop/Cocos2d/Merge_Game -BC:/Users/olesya/Desktop/Cocos2d/Merge_Game/proj.win32 --check-stamp-file C:/Users/olesya/Desktop/Cocos2d/Merge_Game/proj.win32/engine/cocos/core/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\2d\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\3d\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\audio\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\base\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\editor-support\cocostudio\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\math\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\navmesh\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\network\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\physics\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\physics3d\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\platform\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\renderer\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\cocos\ui\CMakeLists.txt;C:\Users\olesya\Desktop\Cocos2d\Merge_Game\cocos2d\extensions\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\olesya\Desktop\Cocos2d\Merge_Game\proj.win32\engine\cocos\core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\olesya\Desktop\Cocos2d\Merge_Game\proj.win32\ZERO_CHECK.vcxproj">
+      <Project>{6D3605B0-54BE-35D9-B8E5-85099A980786}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\olesya\Desktop\Cocos2d\Merge_Game\proj.win32\engine\cocos\core\cocos2d.vcxproj">
+      <Project>{A37271C0-8E3C-30B6-B279-5FB78BBF13D0}</Project>
+      <Name>cocos2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\olesya\Desktop\Cocos2d\Merge_Game\proj.win32\engine\external\clipper\ext_clipper.vcxproj">
+      <Project>{7CD7216D-548A-3AF6-9B6B-DF16789DA242}</Project>
+      <Name>ext_clipper</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\olesya\Desktop\Cocos2d\Merge_Game\proj.win32\engine\external\ConvertUTF\ext_convertUTF.vcxproj">
+      <Project>{7A1FBDD9-F2E1-364E-820B-FCFA06AD5423}</Project>
+      <Name>ext_convertUTF</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\olesya\Desktop\Cocos2d\Merge_Game\proj.win32\engine\external\edtaa3func\ext_edtaa3func.vcxproj">
+      <Project>{9E5D8694-2C00-3334-9D4D-8109B2481804}</Project>
+      <Name>ext_edtaa3func</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\olesya\Desktop\Cocos2d\Merge_Game\proj.win32\engine\external\md5\ext_md5.vcxproj">
+      <Project>{7166F2F5-8450-3069-B1AD-1331916E697D}</Project>
+      <Name>ext_md5</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\olesya\Desktop\Cocos2d\Merge_Game\proj.win32\engine\external\poly2tri\ext_poly2tri.vcxproj">
+      <Project>{CCBC7FD2-2FDE-3CD5-AE28-C0E3B7590176}</Project>
+      <Name>ext_poly2tri</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\olesya\Desktop\Cocos2d\Merge_Game\proj.win32\engine\external\recast\ext_recast.vcxproj">
+      <Project>{2F60EBD8-3A5C-3E8A-A60A-979ED32395D5}</Project>
+      <Name>ext_recast</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\olesya\Desktop\Cocos2d\Merge_Game\proj.win32\engine\external\tinyxml2\ext_tinyxml2.vcxproj">
+      <Project>{652531E2-9CC1-3D56-A69A-94DBAF03C4ED}</Project>
+      <Name>ext_tinyxml2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\olesya\Desktop\Cocos2d\Merge_Game\proj.win32\engine\external\unzip\ext_unzip.vcxproj">
+      <Project>{D19C7E84-52FB-3C98-ABF9-1B8ECEAD5682}</Project>
+      <Name>ext_unzip</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\olesya\Desktop\Cocos2d\Merge_Game\proj.win32\engine\external\xxhash\ext_xxhash.vcxproj">
+      <Project>{FCBD10AB-F484-3C94-8CBF-B0F1EBFB4CF1}</Project>
+      <Name>ext_xxhash</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\olesya\Desktop\Cocos2d\Merge_Game\proj.win32\engine\external\xxtea\ext_xxtea.vcxproj">
+      <Project>{3DE4627C-BB4B-35CB-AC58-0B9B5E478E3C}</Project>
+      <Name>ext_xxtea</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\olesya\Desktop\Cocos2d\Merge_Game\proj.win32\engine\external\external.vcxproj">
+      <Project>{2BBD3D23-D87D-345B-85EE-895633EA554D}</Project>
+      <Name>external</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
