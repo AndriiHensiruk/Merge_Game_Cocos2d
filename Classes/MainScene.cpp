@@ -44,6 +44,7 @@ bool MainScene::init()
 	title->setPosition(Point(visibleSize.width/2, visibleSize.height*3/4));
 	addChild(title);
 
+    //menu for choosing a transition to a new scene in the form of a picture
 	auto normalSprite = Sprite::create("000.png");
 	auto selectSprite = Sprite::create("001.png");
 	auto closeItem = MenuItemSprite::create(normalSprite,selectSprite,NULL,CC_CALLBACK_0(MainScene::nextscene,this));
@@ -52,7 +53,7 @@ bool MainScene::init()
 	auto menu = Menu::createWithItem(closeItem);
 	menu->setPosition(Vec2::ZERO);
 	addChild(menu);
-    AudioEngine::play2d("Menu.mp3", true, 0.1f);
+    AudioEngine::play2d("Menu.mp3", true, 0.1f);    //connect background music
     //AudioEngine::preload("move.mp3");
 
     return true;
@@ -61,7 +62,7 @@ bool MainScene::init()
 
 void MainScene::nextscene()
 {
-    AudioEngine::play2d("move.mp3", false, 0.5f);
+    AudioEngine::play2d("move.mp3", false, 0.5f);   //actuation on pressing
 	Director::getInstance()->replaceScene(TransitionFadeTR::create(0.5, GameScene::createScene()));
 }
 

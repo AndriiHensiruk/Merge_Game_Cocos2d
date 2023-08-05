@@ -20,8 +20,6 @@ public:
 	void doubleNumber();
 	int c_number;
 	int m_col,m_row;
-	//Label *labelnumber;
-	//LayerColor*bk;
 	Sprite* bk;
 };
 

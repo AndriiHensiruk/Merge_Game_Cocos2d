@@ -37,10 +37,10 @@ bool GameScene::init()
 	bg->setScale(1.19, 4);
 	addChild(bg);
 
-	//layercolor²ã
+	//layercolor
 	colorBack = LayerColor::create
 		( Color4B(255,255,255,255),
-		96*4+4*5, 96*4+4*5
+			96 *4+4*5, 96*4+4*5
 		);
 	colorBack->setIgnoreAnchorPointForPosition(false);
 	colorBack->setAnchorPoint(Point(0.5,0.5));
@@ -53,6 +53,7 @@ bool GameScene::init()
 	addChild(layergradient);
 	*/
 
+	//table
 	for(int row=0; row<4; ++row)
 	{
 		for(int col=0; col<4; ++col)
@@ -73,10 +74,12 @@ bool GameScene::init()
 		}
 	}
 	CardSprite::card->clear();
+
+	for(int i=0; i<3; ++i)
 	createCardSprite();
 
 	
-
+	//title of the game
 	title = Label::createWithTTF("Merge Game","fonts/HelloKitty.ttf",70);
 	title->setPosition(Point(visiblesize.width/2 - 10, visiblesize.height - 200));
 	addChild(title);
@@ -90,6 +93,7 @@ bool GameScene::init()
 	scorelayer->setPosition(Point(visiblesize.width/2 - 101, visiblesize.height/6 - 2));
 	this->addChild(scorelayer);
 
+	// ui breeding score and bestScore
 	score =0;
 	Score = Label::createWithTTF("Score", "fonts/HelloKitty.ttf", 40);
 	Score->setPosition(Point(scorelayer->getContentSize().width/2,scorelayer->getContentSize().height - Score->getContentSize().height/2));
@@ -160,7 +164,7 @@ void GameScene::onKeyReleased(EventKeyboard::KeyCode keyCode, Event* event)
 
 void GameScene::endScene()
 {
-//	Director::getInstance() -> replaceScene(CCTransitionFadeDown::create(0.5f,GameScene::createScene()));
+//	Director::getInstance() -> replaceScene(TransitionFadeDown::create(0.5f,GameScene::createScene()));
 	endlayer = LayerColor::create
 		( Color4B(255,255,255,0),
 		64*4, 64*5
@@ -229,7 +233,7 @@ void GameScene::onTouchEnded(Touch *touch, Event *event)
 					if(ismoveleft==true)
 					{
 						moveLeft(); 
-						createCardSprite();
+
 						judgegame();
 						//log("left");
 					}
@@ -239,7 +243,7 @@ void GameScene::onTouchEnded(Touch *touch, Event *event)
 					if(ismoveright==true)
 					{
 						moveRight();
-						createCardSprite();
+						
 						judgegame();
 						//log("right");
 					}
@@ -252,7 +256,7 @@ void GameScene::onTouchEnded(Touch *touch, Event *event)
 					if(ismoveup==true)
 					{
 						moveUp(); 
-						createCardSprite();
+						
 						judgegame();
 						//log("up");
 					}
@@ -262,7 +266,7 @@ void GameScene::onTouchEnded(Touch *touch, Event *event)
 					if(ismovedown==true)
 					{
 						moveDown(); 
-						createCardSprite();
+						
 						judgegame();
 						//log("down");
 					}
@@ -280,7 +284,7 @@ void GameScene::judgegame()
 
 	if( m_sound_clear )
 	{
-		AudioEngine::preload("move.mp3");
+		AudioEngine::play2d("move.mp3", false, 0.5f);
 	}
 
 
@@ -318,6 +322,7 @@ void GameScene::judgemove()
 					if(CardSprite::card->at(map[r][l]-1)->c_number == CardSprite::card->at(map[r+1][l]-1)->c_number)
 					{
 						ismoveup = true;
+						
 						break;
 					}
 				}
@@ -346,6 +351,7 @@ void GameScene::judgemove()
 					if(CardSprite::card->at(map[r][l]-1)->c_number == CardSprite::card->at(map[r-1][l]-1)->c_number)
 					{
 						ismovedown = true;
+						
 						break;
 					}
 				}
@@ -374,6 +380,7 @@ void GameScene::judgemove()
 					if(CardSprite::card->at(map[r][l]-1)->c_number == CardSprite::card->at(map[r][l-1]-1)->c_number)
 					{
 						ismoveleft = true;
+						
 						break;
 					}
 				}
@@ -402,6 +409,7 @@ void GameScene::judgemove()
 					if(CardSprite::card->at(map[r][l]-1)->c_number == CardSprite::card->at(map[r][l+1]-1)->c_number)
 					{
 						ismoveright = true;
+					
 						break;
 					}
 				}
@@ -457,7 +465,10 @@ void GameScene::moveUp()
                             
                             
                              
-                            CardSprite::card->at( map[row1][col] - 1 ) -> removeFromParent();  
+                            CardSprite::card->at( map[row1][col] - 1 ) -> removeFromParent();
+
+							for (int i = 0; i < 2; ++i)
+							createCardSprite();
                             
                             int index = map[row1][col];  
                             CardSprite::card->erase( map[row1][col] - 1 );  
@@ -468,7 +479,8 @@ void GameScene::moveUp()
                                 {  
                                     if( map[r][c] > index )  
                                     {  
-                                        --map[r][c];  
+                                        --map[r][c]; 
+										
                                     }  
                                 }  
                             }  
@@ -521,6 +533,9 @@ void GameScene::moveDown( )
 							bestscore->setString( StringUtils::format(" %d  ",bestScore));
 						
 							CardSprite::card->at( map[row1][col] - 1 ) -> removeFromParent();
+
+							for (int i = 0; i < 2; ++i)
+							createCardSprite();
 
 							int index = map[row1][col];
 							CardSprite::card->erase( map[row1][col] - 1 );
@@ -584,6 +599,10 @@ void GameScene::moveLeft( )
 
 							
 							CardSprite::card->at( map[row][col1] - 1 ) -> removeFromParent();
+
+							for (int i = 0; i < 2; ++i)
+							createCardSprite();
+
 							int index = map[row][col1];
 							CardSprite::card->erase( map[row][col1] - 1 );
 							
@@ -644,7 +663,11 @@ void GameScene::moveRight( )
 							bestscore->setString( StringUtils::format(" %d  ",bestScore));
 
 							
-							CardSprite::card->at( map[row][col1] - 1 ) -> removeFromParent();				
+							CardSprite::card->at( map[row][col1] - 1 ) -> removeFromParent();
+
+							for (int i = 0; i < 2; ++i)
+							createCardSprite();
+
 							int index = map[row][col1];
 							CardSprite::card->erase( map[row][col1] - 1 );
 
@@ -673,7 +696,7 @@ void GameScene::createCardSprite()
 {
 	auto c_card = CardSprite::createCardSprite();
 	
-	int freeCount = 16 - CardSprite::card->size();
+	int freeCount = 12 - CardSprite::card->size();
 	
 	int num = 0;
 	if(freeCount!=0)
