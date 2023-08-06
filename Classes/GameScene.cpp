@@ -276,6 +276,7 @@ void GameScene::onTouchEnded(Touch *touch, Event *event)
         }  
 }
 
+//basic mechanics with movement and inspection
 void GameScene::judgegame()
 {
 	judgemove();
@@ -294,6 +295,7 @@ void GameScene::judgegame()
 	}
 }
 
+//movement
 void GameScene::judgemove()
 {
 	
